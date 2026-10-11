@@ -1,6 +1,0 @@
-{
-  "purpose": "cache-busting latency probe target for the Q2 network panel",
-  "note": "deliberately tiny so the measured round trip is dominated by DNS/TCP/TLS/HTTP overhead rather than by payload transfer",
-  "generated_by": "CSI205TC Q2",
-  "server_time_utc": "1970-01-01T00:00:00Z"
-}
