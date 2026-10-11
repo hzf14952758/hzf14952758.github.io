@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HZF &middot; Student Portfolio</title>
+  <meta name="description" content="Personal webpage of HZF - computer science student, networking and distributed computing." />
+  <meta name="author" content="HZF" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128225;</text></svg>" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top">
+        <span class="brand-mark">HZF</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Switch colour theme" title="Switch colour theme">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g stroke-linecap="round"><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.2 5.2l1.6 1.6M17.2 17.2l1.6 1.6M18.8 5.2l-1.6 1.6M6.8 17.2l-1.6 1.6"/></g></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Computer Science &middot; Networking &amp; Distributed Computing</p>
+        <h1 class="hero-title">Hi, I&rsquo;m <span class="accent">HZF</span>.</h1>
+        <p class="hero-sub">
+          I build small, honest systems and then measure what they actually do &mdash;
+          sockets, packets, distributed data processing.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See my work</a>
+          <a class="btn btn-ghost" href="https://github.com/hzf14952758" target="_blank" rel="noopener">
+            <svg class="btn-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.4 7.4 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>5</strong><span>coursework questions</span></li>
+          <li><strong>2</strong><span>transport protocols compared</span></li>
+          <li><strong>600</strong><span>frames streamed per run</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a computer science student at XJTLU Entrepreneur College (Taicang), currently working
+            through a module on <em>Networking and Distributed Computing</em>. Most of what I enjoy sits
+            at the boundary between the two: what happens to a packet between two processes, and what
+            happens when you have to do the same work on many machines at once.
+          </p>
+          <p>
+            My approach is deliberately empirical. When I build something I try to get real numbers out of
+            it &mdash; latency, loss, throughput &mdash; and I write down what went wrong on the way there,
+            because the debugging is usually the part that actually teaches me something.
+          </p>
+          <p>
+            This page is itself one of those exercises: a static site served by GitHub Pages, which is why
+            you can read about the network analysis of this very page in the report that accompanies it.
+          </p>
+        </div>
+        <aside class="about-facts">
+          <h3>Quick facts</h3>
+          <dl>
+            <div><dt>Focus</dt><dd>Networking &amp; distributed systems</dd></div>
+            <div><dt>Tools</dt><dd>Python, sockets, Wireshark</dd></div>
+            <div><dt>Data</dt><dd>Hadoop, Spark, MapReduce</dd></div>
+            <div><dt>Based in</dt><dd>Taicang, China</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul class="tag-list">
+        <li>Python</li><li>Socket programming</li><li>TCP / UDP</li><li>Wireshark</li>
+        <li>DNS &amp; HTTP</li><li>IP addressing &amp; routing</li><li>Java</li>
+        <li>Hadoop MapReduce</li><li>Apache Spark</li><li>Spark MLlib</li>
+        <li>HTML / CSS / JavaScript</li><li>Git &amp; GitHub</li>
+      </ul>
+    </section>
+
+    <section class="section container" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>Video streaming over TCP and UDP</h3>
+            <span class="badge">Python &middot; sockets</span>
+          </div>
+          <p>
+            A frame-by-frame video streaming client and server written directly on the socket API, in
+            both reliable and unreliable flavours, then compared with Wireshark captures.
+          </p>
+          <p class="card-result">
+            Headline result: dropping 2% of datagrams destroyed 55.8% of frames &mdash; and the measured
+            value matched the (1&minus;(1&minus;p)<sup>n</sup>) model to within a quarter of a percentage
+            point.
+          </p>
+          <ul class="card-tags"><li>Q1</li><li>Wireshark</li><li>UDP fragmentation</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>This website</h3>
+            <span class="badge">HTML &middot; CSS &middot; JS</span>
+          </div>
+          <p>
+            A hand-written static site with no framework and no build step, deployed through GitHub Pages
+            so that it can be used as the subject of a real network analysis.
+          </p>
+          <p class="card-result">
+            The DNS lookup, ping, traceroute and packet capture taken while loading this page are all
+            documented in the coursework report.
+          </p>
+          <ul class="card-tags"><li>Q2</li><li>GitHub Pages</li><li>Static site</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>MapReduce and Spark word count</h3>
+            <span class="badge">Java &middot; Spark</span>
+          </div>
+          <p>
+            The same word-counting task implemented three ways: by hand in plain Python, with Hadoop
+            MapReduce, and with Spark, in order to compare the programming models rather than just the
+            runtimes.
+          </p>
+          <p class="card-result">
+            <span class="muted">In progress &mdash; results and discussion to follow.</span>
+          </p>
+          <ul class="card-tags"><li>Q3&ndash;Q4</li><li>Hadoop</li><li>Spark</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-lead">The fastest way to reach me is by email or on GitHub.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:hzf14952758@163.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">hzf14952758@163.com</span>
+        </a>
+        <a class="contact-link" href="https://github.com/hzf14952758" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">@hzf14952758</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> HZF &middot; Built by hand, served by GitHub Pages.</p>
+      <p class="footer-meta">Last updated <span id="updated">2026-10-12</span></p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
