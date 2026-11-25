@@ -78,10 +78,6 @@
   var year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());
 
-  var updated = document.getElementById("updated");
-  if (updated) {
-    var d = new Date();
-    var pad = function (n) { return String(n).padStart(2, "0"); };
-    updated.textContent = d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate());
-  }
+  /* Last-updated date is written in the HTML so it stays a real revision date,
+     not the day the page happens to be opened. */
 })();

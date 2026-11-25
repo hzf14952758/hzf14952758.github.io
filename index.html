@@ -54,7 +54,7 @@
         <ul class="hero-stats">
           <li><strong>5</strong><span>coursework questions</span></li>
           <li><strong>2</strong><span>transport protocols compared</span></li>
-          <li><strong>600</strong><span>frames streamed per run</span></li>
+          <li><strong>2,533</strong><span>frames streamed per run</span></li>
         </ul>
       </div>
     </section>
@@ -114,8 +114,8 @@
             both reliable and unreliable flavours, then compared with Wireshark captures.
           </p>
           <p class="card-result">
-            Headline result: dropping 2% of datagrams destroyed 55.8% of frames &mdash; and the measured
-            value matched the (1&minus;(1&minus;p)<sup>n</sup>) model to within a quarter of a percentage
+            Headline result: dropping 2% of datagrams destroyed 69.80% of frames &mdash; and the measured
+            value matched the (1&minus;(1&minus;p)<sup>n</sup>) model to within a percentage
             point.
           </p>
           <ul class="card-tags"><li>Q1</li><li>Wireshark</li><li>UDP fragmentation</li></ul>
@@ -148,9 +148,28 @@
             runtimes.
           </p>
           <p class="card-result">
-            <span class="muted">In progress &mdash; results and discussion to follow.</span>
+            The hand-written Python MapReduce and the Hadoop and Spark versions agreed word for word.
+            On this laptop a combiner cut the shuffled data sharply but barely changed the runtime,
+            and Spark&rsquo;s default of 200 shuffle partitions turned a 15-second job into a five-minute one.
           </p>
           <ul class="card-tags"><li>Q3&ndash;Q4</li><li>Hadoop</li><li>Spark</li></ul>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Income prediction with Spark MLlib</h3>
+            <span class="badge">Python &middot; Spark</span>
+          </div>
+          <p>
+            A complete Spark MLlib workflow on the UCI Adult census-income set: loading,
+            preprocessing, training, prediction and evaluation, with more than one metric.
+          </p>
+          <p class="card-result">
+            The tuned gradient-boosted tree reached 86.1% accuracy and an AUC-ROC of 0.912.
+            The default 0.5 threshold was not the F1-optimal 0.35, and recall on the positive
+            class differed by sex by nearly ten percentage points.
+          </p>
+          <ul class="card-tags"><li>Q5</li><li>Spark MLlib</li><li>evaluation</li></ul>
         </article>
       </div>
     </section>
@@ -174,7 +193,7 @@
   <footer class="site-footer">
     <div class="container">
       <p>&copy; <span id="year">2026</span> HZF &middot; Built by hand, served by GitHub Pages.</p>
-      <p class="footer-meta">Last updated <span id="updated">2026-10-12</span></p>
+      <p class="footer-meta">Last updated <span id="updated">2026-11-26</span></p>
     </div>
   </footer>
 
